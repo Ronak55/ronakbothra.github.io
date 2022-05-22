@@ -1,0 +1,476 @@
+@import url('https:fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+section{
+
+    padding:100px;
+}
+
+.banner{
+
+    position:relative;
+    min-height:100vh;
+
+    background: url(pine.jpg);
+    background-size:cover;
+    background-position:right;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.banner h2{
+
+    font-size:3em;
+    color: purple;
+    font-weight:500;
+    line-height: 1.5em;
+    
+}
+
+.banner h2 span{
+
+    font-size:1.5em;
+    font-weight:700;
+}
+
+.banner h3{
+
+    margin-top: 30px;
+    font-size:1.5em;
+    color:maroon;
+    font-weight:500;
+    margin-bottom:20px;
+}
+
+.btn{
+
+    position:relative;
+    background:white;
+    display:inline-block;
+    color:black;
+    margin-top:20px;
+    padding:10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    letter-spacing: 2px;
+    font-weight:500;
+}
+
+header{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    transition: 0.5%;
+
+}
+
+header.sticky{
+
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    
+    }
+
+header .logo{
+
+    color: #000;
+    font-size:24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+header.sticky .logo{
+
+    color:#111;
+}
+
+
+header ul{
+
+    position:relative;
+    display:flex;
+
+
+
+}
+
+header ul li{
+
+    position:relative;
+    list-style: none;
+}
+
+header ul li a{
+
+    position:relative;
+    display: inline-block;
+    margin:0 15px;
+    color:#000;
+    text-decoration:none;
+}
+
+.heading{
+
+    width: 100%;
+    text-align:center;
+    margin-bottom: 30px;
+    color:#111
+}
+
+
+.heading h2{
+    font-weight: 600;
+    font-size:30px;
+}
+
+.content{
+
+    display: flex;
+    justify-content:space-between;
+    
+
+}
+
+.content8x{
+
+ padding-right: 30px;  
+
+}
+
+.content8x h3{
+
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.w50{
+    min-width: 50%;
+}
+
+img{
+    max-width:100%;
+ 
+}
+
+.services{
+
+    background: #111;
+}
+
+.services .headingx{
+    color:#fff;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.services .content{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content .services8x{
+
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.3s;
+
+}
+
+.services .content .services8x:hover{
+
+background: #2196f3;
+
+}
+
+.services .content .services8x img{
+
+    max-width: 80px;
+    filter: invert(1);
+    
+}
+
+.services .content .services8x:hover{
+
+        font-size: 17px;
+        font-weight: 600;
+        
+        }
+
+.contact{
+
+    background: blanchedalmond;
+}
+
+.contact .heading{
+    color: black;
+}
+
+.contact .heading p{
+    
+    margin-top: 15px;
+    font-size:20px;
+
+}
+
+.form8x{
+    min-width:60%;
+}
+
+.form8x form{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.form8x form h3, .contactinfo h3{
+
+color:black;
+font-size: 24px;
+font-weight:700;
+margin-bottom: 20px;
+
+
+}
+
+.form8x form input, .form8x form textarea{
+
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border:none;
+    outline:none;
+    background: #222;
+     color: #fff; 
+    resize: none;
+}
+
+.form8x form textarea{
+
+    min-height: 200px;
+}
+
+.form8x form input::placeholder, .form8x form textarea::placeholder{
+
+color:#999;
+
+
+
+}
+
+.form8x form input[type="submit"]{
+
+    max-width: 100px;
+    background: chocolate;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contactinfo{
+
+min-width: 40%;
+
+}
+
+.contactinfo8x{
+    position: relative;
+}
+
+.contactinfo8x .box{
+
+    position: relative;
+    padding: 20px 0;
+
+    display: flex;
+}
+
+
+.contactinfo8x .box .icon{
+
+    min-width: 50px;
+    position: relative;
+    padding-top: 4px;
+    color: chocolate;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    font-size:24px;
+}
+
+.contactinfo8x .box .text{
+
+
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: black;
+    flex-direction: column;
+    font-weight: 300;
+
+}
+
+.contactinfo8x .box .text h3{
+
+    font-weight: 500;
+    color:brown;
+    margin-bottom: 0; 
+}
+
+.copyright{
+
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 991px){
+
+    header, header.sticky{
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+
+    .menu{
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        text-align: center;
+        padding: 100px 50px;
+        align-items:center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition:0.5s;
+        z-index:999;
+        border-top: 1px  solid rgba(0,0,0,0.2);
+    }
+
+    .menu.active{
+
+        left:0;
+    }
+    header ul li a{
+
+        color:#111;
+        font-size: 20px;
+        margin: 10px;;
+        font-family:'Poppins';
+    }
+
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(menu.png);
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+
+    .toggle.active{
+
+        background: url(close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+
+    header.sticky .toggle{
+
+        filter: invert(1);
+
+    }
+
+
+
+    section{
+        padding: 100px 50px;
+    }
+
+    .banner{
+
+        padding: 150px 50px 100px;
+    }
+
+    .banner h2{
+
+        font-size:1.5em;
+    }
+
+    .btn{
+
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .heading h2{
+        font-size: 24px;
+    }
+
+    .content8x h3{
+
+        font-size: 20px;
+    }
+
+    .content{
+
+        flex-direction: column;
+    }
+
+    .w50{
+
+        margin-bottom: 20px;
+    }
+
+    .services .content .services8x{
+
+        margin: 10px;
+
+
+    }   
+
+    .contactinfo{
+
+        min-width: 40%;
+        margin: 20px 0;
+    }
+
+}
+
