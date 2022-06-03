@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
 </head>
 <body>
 
@@ -37,10 +39,14 @@
 
          <h3>An enthusiastic 2<sup>nd</sup> Year B.Tech student</h3>
 
-         <a href = "#about" class="btn">About Me</a>
+         <form method="get" action="Resume.pdf" target="_blank">
+            <button type="submit" class="btn">Download CV</button>
+         </form>
 
 
+         <!-- <a href = "#about" class="btn">Download CV</a> -->
 
+     
 
         </div>
    
@@ -56,7 +62,7 @@
            <h3>Yet another Techy Guy !<br><br></h3>
 
            <p>Hey ! This is Ronak Bothra, a 2nd year CSE B.tech student from Dronacharya College of Engineering, Gurgaon. Well talking about myself, i grew up in a small town of Bilasipara in Assam. Since childhood, I was a silent kid and a good observor of the things going around me.
-               It was the time when I had folders of the songs of my favourite singers XD. I am fond of cricket, football, carrom, chess, badminton. Those were good old days when the word "PRESSURE" didnt existed in my dictionary. <br><br> I used to watch a lot of cartoons and played cricket all day long until 10th. After that, life took a turn and I turned my focus to clear JEE from 11th. As ill luck would have it , Just cleared the cutoff. Now, its the college life. During the first year, explored all the fields from which we can shape our career in future. I dived deeper listeninig to different genres of songs. As the 1st year went online, I came to know about discord and it was the best thing which happened to me during that time. I guess our batch is the first ever batch to have made friends online.<br><br></p>
+               It was the time when I had folders of the songs of my favourite singers XD. I am fond of cricket, football, carrom, chess, badminton. Those were good old days when the word "PRESSURE" didnt existed in my dictionary. <br><br> I used to watch a lot of cartoons and played cricket all day long until 10th. After that, life took a turn and I turned my focus to clear JEE from 11th. As ill luck would have it , Just cleared the cutoff. Now, its the college life. During the first year, explored all the fields from which we can shape our career in future. I dived deeper listeninig to different genres of songs. As the 1st year went online, I came to know about discord and it was the best thing which happened to me during that time. I guess our batch is the first ever batch to have made friends online.</p>
 
 
 
@@ -64,7 +70,7 @@
 
             <div class = "content8x w50">
 
-                <img src = "img1.jpg" class="img">
+                <img src = "rony.jfif" class="img">
 
 
             </div>
@@ -162,14 +168,25 @@
                         <input type="email" name="" placeholder="Email">
 
                         <textarea placeholder="Your message"></textarea>
-                        <input type="submit" value="Send">
+                        <form method = "post" >
+                        <input type="submit" value="Send" onclick="sendcrow()">
                      </form>
                  </div>
               </div>
 
 </section>
 <div class="copyright"><p>Copyright &copy; 2022 Ronak Bothra. All Rights Reserved.</p></div>
+  
     <script type="text/javascript">
+
+
+function sendcrow(){
+   
+ alert("Your messsage was sent successfully !")
+
+}
+
+
 
  window.addEventListener('scroll', function() {
      var header = document.querySelector('header');
@@ -186,9 +203,7 @@
      menu.classList.toggle('active')
 
  }
- 
-    </script>
-
+</script>
 
 </body>
 </html>

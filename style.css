@@ -13,7 +13,7 @@
 
 section{
 
-    padding:100px;
+    padding:200px;
 }
 
 .banner{
@@ -27,7 +27,9 @@ section{
     display: flex;
     justify-content:space-between;
     align-items: center;
+    
 }
+
 
 .banner h2{
 
@@ -56,9 +58,9 @@ section{
 .btn{
 
     position:relative;
-    background:white;
+    background:light;
     display:inline-block;
-    color:black;
+    color:rgb(20, 18, 18);
     margin-top:20px;
     padding:10px 30px;
     font-size: 18px;
@@ -67,6 +69,7 @@ section{
 
     letter-spacing: 2px;
     font-weight:500;
+    cursor:pointer;
 }
 
 header{
@@ -137,26 +140,37 @@ header ul li a{
     width: 100%;
     text-align:center;
     margin-bottom: 30px;
-    color:#111
+    color:#111;
+    
 }
 
 
 .heading h2{
+    color:palegoldenrod;
     font-weight: 600;
     font-size:30px;
 }
 
+.about{
+
+    background-color:black;
+}
+
 .content{
+
+   color: #fff;
 
     display: flex;
     justify-content:space-between;
+   
     
 
 }
 
 .content8x{
 
- padding-right: 30px;  
+ padding-right: 30px;
+   
 
 }
 
@@ -166,8 +180,18 @@ header ul li a{
     margin-bottom: 10px;
 }
 
+.img{
+
+border-radius: 50px;
+margin-top: 50px;
+margin-left: 70px;
+
+
+}
+
+
 .w50{
-    min-width: 50%;
+    min-width: 30%;
 }
 
 img{
@@ -177,7 +201,7 @@ img{
 
 .services{
 
-    background: #111;
+    background: darkslategray;
 }
 
 .services .headingx{
@@ -228,7 +252,7 @@ background: #2196f3;
 
 .contact{
 
-    background: blanchedalmond;
+    background:darkseagreen;
 }
 
 .contact .heading{
@@ -243,7 +267,7 @@ background: #2196f3;
 }
 
 .form8x{
-    min-width:60%;
+    min-width:50%;
 }
 
 .form8x form{
@@ -301,10 +325,15 @@ color:#999;
 .contactinfo{
 
 min-width: 40%;
+margin-left:100px;
+color: lightcyan;
+margin-bottom: 30px;
+
 
 }
 
 .contactinfo8x{
+  
     position: relative;
 }
 
